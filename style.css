@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+}
+
+/* NAVBAR */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    border-bottom: 1px solid #eee;
+    z-index: 1000;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: url("images/hero.jpg") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: auto;
+}
+
+/* INTRO */
+.intro {
+    padding: 80px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* ABOUT */
+.about {
+    padding: 80px;
+}
+
+.about-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.about img {
+    width: 400px;
+}
+
+/* PORTFOLIO */
+.portfolio {
+    padding: 80px;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+}
+
+/* RESUME */
+.resume {
+    padding: 80px;
+    text-align: center;
+}
+
+.button {
+    background: #1f4cff;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+}
+
+/* MISSION */
+.mission {
+    background: black;
+    color: white;
+    padding: 100px;
+    text-align: center;
+}
+
+/* CONTACT */
+.contact {
+    padding: 80px;
+    text-align: center;
+}
+
+.contact input, .contact textarea {
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
