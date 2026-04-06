@@ -1,52 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sydane Morrison | Infrastructure Risk & Resilience Engineer</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- EDIT: Replace with your name / title -->
+  <title>Your Name - Your Title</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header>
-    <div class="logo">Sydane Morrison</div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="resume.html">Resume</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav">
+    <!-- EDIT: Your name / title -->
+    <a href="index.html" class="nav-logo">Your Name - Your Title</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="givingback.html">Giving Back</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-<section class="hero">
-    <div class="hero-text">
-        <h1>Infrastructure Risk & Resilience Engineer</h1>
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="hero-bg">
+      <!-- EDIT: Replace with your hero background image -->
+      <img src="YOUR_HERO_IMAGE.jpg" alt="Hero background">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <!-- EDIT: Your name -->
+      <h1>Hi, I'm Your Name</h1>
+      <!-- EDIT: One-line identity -->
+      <p class="tagline">
+        I'm a [Your Discipline] with a Passion for [Interest 1], [Interest 2], &amp; [Interest 3].
+      </p>
+      <!-- EDIT: Expanded intro -->
+      <p class="sub-tagline">
+        I have [major accomplishment 1], [major accomplishment 2], and [major accomplishment 3].
+        <br><br>
+        Currently at <a href="#">Company / Organization</a> — doing [what you do now] to [impact statement].
+      </p>
+    </div>
+    <div class="scroll-indicator">
+      <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT / BIO SECTION ===== -->
+  <section class="about" id="about">
+    <div class="about-grid">
+      <div class="about-image-wrap">
+        <!-- EDIT: Your photo -->
+        <img src="YOUR_PHOTO.jpg" alt="Your Name">
+        <!-- EDIT: Caption -->
+        <p class="about-image-caption">Your photo caption here!</p>
+      </div>
+      <div class="about-text">
+        <!-- EDIT: Mission headline -->
+        <h2>An Engineer on a Mission.</h2>
+        <!-- EDIT: Bio paragraphs -->
         <p>
-            I build data-driven models, maps, and decision-support tools that help cities,
-            infrastructure owners, and emergency managers understand flood risk,
-            infrastructure vulnerability, and disaster impacts.
+          I am a [your discipline] with a passion for [what drives you].
+          Describe your mission and what you bring to the table.
         </p>
+        <p>
+          In my [degree/program], I [key academic accomplishment]. Before that, I [previous role]
+          at <a href="#">Company Name</a>. I've also [additional experience]
+          at <a href="#">Organization</a>.
+        </p>
+      </div>
     </div>
-</section>
+  </section>
 
-<section class="about">
-    <div class="about-container">
-        <img src="images/yourphoto.jpg" alt="Profile Photo">
-        <div class="about-text">
-            <h2>About Me</h2>
-            <p>
-                I am a civil engineer specializing in infrastructure risk, flood modeling,
-                GIS analysis, and infrastructure resilience. My work focuses on using data,
-                engineering models, and spatial analysis to understand how disasters impact
-                infrastructure systems and communities.
-            </p>
-        </div>
-    </div>
-</section>
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <ul class="footer-links">
+      <li><a href="index.html">About</a></li>
+      <li><span>|</span></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><span>|</span></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><span>|</span></li>
+      <li><a href="givingback.html">Giving Back</a></li>
+      <li><span>|</span></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <!-- EDIT: Your copyright -->
+    <p class="footer-copy">&copy; 2026 - Your Name</p>
+  </footer>
 
-<footer>
-    <p>© 2026 Sydane Morrison</p>
-</footer>
-
+  <script>
+    document.getElementById('navToggle').addEventListener('click', () =>
+      document.getElementById('navLinks').classList.toggle('open')
+    );
+  </script>
 </body>
 </html>
