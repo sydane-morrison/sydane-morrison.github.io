@@ -1,43 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume | Sydane Morrison</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume — Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header>
-    <div class="logo">Sydane Morrison</div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="resume.html">Resume</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">Your Name - Your Title</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="resume.html" class="active">Resume</a></li>
+      <li><a href="givingback.html">Giving Back</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-<section class="resume">
-    <h1>Resume</h1>
+  <!-- ===== PAGE HERO (minimal for resume) ===== -->
+  <section class="page-hero" style="height: 30vh; min-height: 240px;">
+    <div class="hero-bg">
+      <img src="YOUR_RESUME_HERO.jpg" alt="Resume background">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="page-hero-content">
+      <h1>Resume</h1>
+    </div>
+  </section>
 
-    <h2>Education</h2>
-    <p>Master’s in Civil Engineering – Lehigh University</p>
+  <!-- ===== RESUME CONTENT ===== -->
+  <section class="resume-section">
 
-    <h2>Skills</h2>
-    <p>Python, ArcGIS, HEC-RAS, GIS, Flood Modeling, Risk Analysis</p>
+    <!-- EDUCATION -->
+    <div class="resume-block">
+      <h3 class="resume-block-title">Education</h3>
 
-    <h2>Projects</h2>
-    <p>Flood modeling, CARE system, road closure analysis, infrastructure risk modeling</p>
+      <!-- EDIT: Replace with your education -->
+      <div class="resume-item">
+        <strong>Degree Title</strong>, <span class="org">University Name</span>.
+        Concentration / focus area, relevant certificates or honors.
+      </div>
+      <div class="resume-item">
+        <strong>Degree Title</strong>, <span class="org">University Name</span>.
+        Minor, honors, or additional details.
+      </div>
+    </div>
 
-    <br><br>
-    <a href="resume.pdf" class="button">Download PDF Resume</a>
+    <!-- WORK EXPERIENCE -->
+    <div class="resume-block">
+      <h3 class="resume-block-title">Work Experience</h3>
 
-</section>
+      <!-- EDIT: Replace with your roles -->
+      <div class="resume-item">
+        <strong>Job Title</strong> — <span class="org">Company / Organization</span>
+      </div>
+      <div class="resume-item">
+        <strong>Job Title</strong> — <span class="org">Company / Organization</span>
+      </div>
+      <div class="resume-item">
+        <strong>Job Title</strong> — <span class="org">Company / Organization</span>
+      </div>
+      <div class="resume-item">
+        <strong>Job Title</strong> — <span class="org">Company / Organization</span>
+      </div>
+    </div>
 
-<footer>
-    <p>© 2026 Sydane Morrison</p>
-</footer>
+    <!-- ADDITIONAL TRAINING / CERTIFICATIONS -->
+    <div class="resume-block">
+      <h3 class="resume-block-title">Additional Training</h3>
 
+      <!-- EDIT: Replace with your certifications / training -->
+      <div class="resume-item">Certification or Training Name</div>
+      <div class="resume-item">Certification or Training Name</div>
+      <div class="resume-item">Certification or Training Name</div>
+    </div>
+
+    <!-- ACHIEVEMENTS -->
+    <div class="resume-block">
+      <h3 class="resume-block-title">Achievements</h3>
+
+      <!-- EDIT: Replace with your achievements -->
+      <div class="resume-item">Achievement, award, or honor</div>
+      <div class="resume-item">Achievement, award, or honor</div>
+      <div class="resume-item">Achievement, award, or honor</div>
+    </div>
+
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <ul class="footer-links">
+      <li><a href="index.html">About</a></li>
+      <li><span>|</span></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><span>|</span></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><span>|</span></li>
+      <li><a href="givingback.html">Giving Back</a></li>
+      <li><span>|</span></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <p class="footer-copy">&copy; 2026 - Your Name</p>
+  </footer>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', () =>
+      document.getElementById('navLinks').classList.toggle('open')
+    );
+  </script>
 </body>
 </html>
