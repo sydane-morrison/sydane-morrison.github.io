@@ -1,58 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Sydane Morrison</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- EDIT: Replace with your name / title -->
+  <title>Portfolio — Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header>
-    <div class="logo">Sydane Morrison</div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="resume.html">Resume</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">Your Name - Your Title</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html" class="active">Portfolio</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="givingback.html">Giving Back</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-<section class="portfolio">
-    <h1>Project Portfolio</h1>
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="hero-bg">
+      <!-- EDIT: Background image for portfolio header -->
+      <img src="YOUR_PORTFOLIO_HERO.jpg" alt="Portfolio background">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="page-hero-content">
+      <h1>Project Portfolio</h1>
+    </div>
+  </section>
 
-    <div class="grid">
+  <!-- ===== PORTFOLIO GRID ===== -->
+  <section class="portfolio-section">
+    <div class="portfolio-grid">
 
-        <div class="card">
-            <img src="images/project1.jpg">
-            <h3>Flood Depth Modeling</h3>
-            <p>HEC-RAS and GIS flood modeling to estimate flood depths and infrastructure impacts.</p>
+      <!-- EDIT: Duplicate this card block for each project. Replace image, title, description, and link. -->
+
+      <!-- PROJECT 1 -->
+      <div class="portfolio-card">
+        <a href="#" class="portfolio-card-link" aria-label="View project"></a>
+        <img src="YOUR_PROJECT_1_IMAGE.jpg" alt="Project 1">
+        <div class="portfolio-card-body">
+          <h3>Project Title 1</h3>
+          <p>Brief description of the project — your role, the technology, and the impact.</p>
         </div>
+      </div>
 
-        <div class="card">
-            <img src="images/project2.jpg">
-            <h3>Road Flooding Analysis</h3>
-            <p>GIS analysis to determine which roads become impassable during flood events.</p>
+      <!-- PROJECT 2 -->
+      <div class="portfolio-card">
+        <a href="#" class="portfolio-card-link" aria-label="View project"></a>
+        <img src="YOUR_PROJECT_2_IMAGE.jpg" alt="Project 2">
+        <div class="portfolio-card-body">
+          <h3>Project Title 2</h3>
+          <p>Brief description of the project — your role, the technology, and the impact.</p>
         </div>
+      </div>
 
-        <div class="card">
-            <img src="images/project3.jpg">
-            <h3>CARE System</h3>
-            <p>Critical Access & Resilience Engine for disaster response and infrastructure prioritization.</p>
+      <!-- PROJECT 3 -->
+      <div class="portfolio-card">
+        <a href="#" class="portfolio-card-link" aria-label="View project"></a>
+        <img src="YOUR_PROJECT_3_IMAGE.jpg" alt="Project 3">
+        <div class="portfolio-card-body">
+          <h3>Project Title 3</h3>
+          <p>Brief description of the project — your role, the technology, and the impact.</p>
         </div>
+      </div>
 
-        <div class="card">
-            <img src="images/project4.jpg">
-            <h3>Flood Risk to Buildings</h3>
-            <p>Flood exposure and risk estimation for buildings and infrastructure.</p>
+      <!-- PROJECT 4 -->
+      <div class="portfolio-card">
+        <a href="#" class="portfolio-card-link" aria-label="View project"></a>
+        <img src="YOUR_PROJECT_4_IMAGE.jpg" alt="Project 4">
+        <div class="portfolio-card-body">
+          <h3>Project Title 4</h3>
+          <p>Brief description of the project — your role, the technology, and the impact.</p>
         </div>
+      </div>
+
+      <!-- PROJECT 5 -->
+      <div class="portfolio-card">
+        <a href="#" class="portfolio-card-link" aria-label="View project"></a>
+        <img src="YOUR_PROJECT_5_IMAGE.jpg" alt="Project 5">
+        <div class="portfolio-card-body">
+          <h3>Project Title 5</h3>
+          <p>Brief description of the project — your role, the technology, and the impact.</p>
+        </div>
+      </div>
+
+      <!-- PROJECT 6 -->
+      <div class="portfolio-card">
+        <a href="#" class="portfolio-card-link" aria-label="View project"></a>
+        <img src="YOUR_PROJECT_6_IMAGE.jpg" alt="Project 6">
+        <div class="portfolio-card-body">
+          <h3>Project Title 6</h3>
+          <p>Brief description of the project — your role, the technology, and the impact.</p>
+        </div>
+      </div>
+
+      <!-- Add more cards as needed by copying the block above -->
 
     </div>
-</section>
+  </section>
 
-<footer>
-    <p>© 2026 Sydane Morrison</p>
-</footer>
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <ul class="footer-links">
+      <li><a href="index.html">About</a></li>
+      <li><span>|</span></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><span>|</span></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><span>|</span></li>
+      <li><a href="givingback.html">Giving Back</a></li>
+      <li><span>|</span></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <p class="footer-copy">&copy; 2026 - Your Name</p>
+  </footer>
 
+  <script>
+    document.getElementById('navToggle').addEventListener('click', () =>
+      document.getElementById('navLinks').classList.toggle('open')
+    );
+  </script>
 </body>
 </html>
+
